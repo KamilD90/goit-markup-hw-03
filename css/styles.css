@@ -1,0 +1,191 @@
+:root {
+  --text1: #757575;
+  --text-alt: #2196f3;
+  --text2: #212121;
+  --black: #000000;
+  --white: #ffffff;
+  --section-background: #2f303a;
+  --our-team: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.logo {
+  color: var(--text-alt);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.17;
+}
+
+.studio-black {
+  color: var(--black);
+}
+
+.navigate a {
+  color: var(--text2);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navigate a:focus,
+.navigate a:hover {
+  color: var(--text-alt);
+}
+
+.contact {
+  font-weight: 500;
+
+  text-decoration: none;
+  color: var(--text1);
+}
+
+.contact:focus,
+.contact:hover {
+  color: var(--text-alt);
+}
+
+/*  body of WebStudio site */
+.slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--section-background);
+}
+.slogan button {
+  background-color: var(--text-alt);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+}
+
+.slogan button:focus,
+.slogan button:hover {
+  cursor: pointer;
+}
+
+.article h3 {
+  font-weight: 700;
+  font-size:14px;
+  line-height: 1.17;
+  color: var(--text2);
+}
+
+.article p {
+  line-height: 1.71;
+  color: var(--text1);
+ 
+}
+
+.our-job h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--text2);
+  line-height: 1.17;
+}
+
+.team {
+  background-color: var(--our-team);
+}
+.team h2 {
+  font-weight: 700;
+  color: var(--text2);
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.team .team-members {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text1);
+  line-height: 1.17;
+}
+
+.team-members span {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text2);
+  line-height: 1.17;
+}
+
+
+.footer {
+  background-color: var(--section-background);
+  line-height: 1.71; 
+}
+
+.studio-white {
+  color: var(--white); 
+}
+
+.footer .route {
+  color: var(--white);
+  text-decoration: none;
+  font-weight:400;
+  font-style:normal;
+  
+}
+.footer .contact{
+  font-weight:400;
+  font-style:normal;
+  
+}
+
+
+/* Portfolio site starts here */
+
+.filters button {
+  color: var(--text2);
+  background-color: var(--our-team);
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: 0;
+}
+
+.filters button:hover,
+.filters button:focus {
+  background-color: var(--text-alt);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* CATEGORY IMAGES */
+
+.category-item {
+  font-size: 16px;
+
+  line-height: 1.87;
+}
+
+.category-item span {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text2);
+  
+  line-height: 2;
+}
+
+ .contact-portfolio{
+  text-decoration: underline;
+  text-decoration-color: var(--text1);
+  font-weight:400;
+  font-style: normal;
+  color: var(--text1);
+}
+
+.contact-portfolio:hover,
+.contact-portfolio:focus {
+  
+  color: var(--text-alt);
+}
