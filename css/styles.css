@@ -8,6 +8,11 @@
   --our-team: #f5f4fa;
 }
 
+p,h2,h3,ul{
+  margin:0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
