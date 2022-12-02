@@ -22,19 +22,22 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <a href="index.html" class="logo"
-          >Web<span class="logo-studio-black">Studio</span></a
-        >
-        <!--nav to częśc strony która ma odnośniki do nawigacji po naszej stronie-->
-        <nav class="navigate">
-          <ul>
-            <li><a href="#">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
+        <div class="flex-nav">
+          <a href="index.html" class="logo"
+            >Web<span class="logo-studio-black">Studio</span></a
+          >
+          <!--nav to częśc strony która ma odnośniki do nawigacji po naszej stronie-->
+
+          <nav class="navigate">
+            <ul>
+              <li><a href="#">Agencja</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="contact">
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -97,6 +100,7 @@
                 alt="ludzkie dłonie piszą kod źródłowy"
                 width="370"
                 height="294"
+                class="our-job-example"
               />
             </li>
             <li>
@@ -105,6 +109,7 @@
                 alt="kobieta wybiera na laptopie UserInterface"
                 width="370"
                 height="294"
+                class="our-job-example"
               />
             </li>
             <li>
@@ -113,6 +118,7 @@
                 alt="człowiek wybiera na tablecie kolor z dostępnej palety"
                 width="370"
                 height="294"
+                class="our-job-example"
               />
             </li>
           </ul>
@@ -185,23 +191,27 @@
           >Web<span class="logo-studio-white">Studio</span></a
         >
         <address>
-          <ul>
-            <li>
-              <a
-                href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa,+Polska/@52.2305319,21.013843,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
-                class="route"
-                >m. Warszawa, Aleje Jerozolimskie, 21</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact-mail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+48111111111" class="contact-tel">+48 111 111 111</a>
-            </li>
-          </ul>
+          <div class="contact-data">
+            <ul>
+              <li>
+                <a
+                  href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa,+Polska/@52.2305319,21.013843,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
+                  class="route"
+                  >m. Warszawa, Aleje Jerozolimskie, 21</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="contact-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="contact-tel"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
         </address>
       </div>
     </footer>

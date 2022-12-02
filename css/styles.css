@@ -22,9 +22,10 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
+  width: 1600px;
 }
 
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 .container {
@@ -34,12 +35,16 @@ header {
   margin: 0 auto;
 }
 
-header > .container {
+.header .container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+.flex-nav {
+  display: flex;
 }
 
 .logo {
+  display: flex;
   color: var(--text-alt);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -56,16 +61,14 @@ header > .container {
 }
 
 .navigate {
-  list-style: none;
-  width: 254px;
-  margin-right: 371px;
+  display: flex;
+  align-items: center;
 }
 
 .navigate ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 46px;
 }
 
 .navigate a {
@@ -81,10 +84,11 @@ header > .container {
   color: var(--text-alt);
 }
 
-header .contact {
+.contact {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 50px;
+  padding-right: 12px;
 }
 .contact a {
   font-weight: 500;
@@ -132,6 +136,8 @@ header .contact {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--text-alt);
+  outline: none;
+  border: none;
 }
 
 .slogan button:hover {
@@ -162,21 +168,24 @@ header .contact {
   text-align: justify;
 }
 
-/* section 
-2 main page */
+/* section OUR JOB main page */
+.our-job-example {
+  vertical-align: middle;
+}
 .our-job h2 {
   font-weight: 700;
   font-size: 36px;
   color: var(--text2);
   line-height: 1.17;
-  margin-top: -94px;
-  margin-bottom: 50px;
+  margin-top: 0 px;
+
   text-align: center;
 }
 .our-job ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin-top: 50px;
   gap: 30px;
 }
 /* SECTION TEAM  */
@@ -218,14 +227,13 @@ header .contact {
   color: var(--text2);
   line-height: 1.17;
   display: block;
-  align-text: center;
+  align-items: center;
   padding-top: 30px;
   margin-bottom: 10px;
 }
 /* FOOTER PART */
 .footer {
   background-color: var(--section-background);
-  line-height: 1.71;
 }
 
 footer .logo {
@@ -237,39 +245,39 @@ footer .logo {
 .logo-studio-white {
   color: var(--white);
 }
-.footer ul {
+
+.footer address {
+  font-style: normal;
+}
+.contact-data ul {
   list-style: none;
 }
+.contact-data li {
+  display: block;
+}
 
+.contact-data {
+  display: inline-block;
+  padding-bottom: 60px;
+}
 .route {
-  dislay: inline-block;
   color: var(--white);
   text-decoration: none;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 9px;
+  line-height: 1.71;
 }
 .contact-mail {
-  display: inline-block;
-  font-weight: 400;
-  font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text1);
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 .contact-tel {
-  display: inline-block;
-  font-weight: 400;
-  font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text1);
   letter-spacing: 0.03em;
-  margin-bottom: 60px;
 }
 .contact-mail:focus,
 .contact-mail:hover {
@@ -316,6 +324,7 @@ footer .logo {
 }
 
 /* CATEGORY IMAGES */
+
 .section.category {
   padding-top: 0;
 }
@@ -327,9 +336,6 @@ footer .logo {
   justify-content: space-around;
 }
 
-img {
-  vertical-align: middle;
-}
 .category figure {
   margin-bottom: 30px;
 }
@@ -337,6 +343,9 @@ img {
 .category figcaption {
   border: 1px solid #ececec;
   border-top: none;
+}
+.category img {
+  vertical-align: middle;
 }
 .category-item {
   display: block;
@@ -360,7 +369,7 @@ img {
 .contact-portfolio {
   text-decoration: underline;
   text-decoration-color: var(--text1);
-  font-weight: 400;
+
   font-style: normal;
   color: var(--text1);
 }
