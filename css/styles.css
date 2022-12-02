@@ -367,7 +367,6 @@ body {
   text-decoration: underline;
   text-decoration-color: var(--text1);
   font-size: 14px;
-  font-style: normal;
   line-height: 1.71;
   color: var(--text1);
 }
